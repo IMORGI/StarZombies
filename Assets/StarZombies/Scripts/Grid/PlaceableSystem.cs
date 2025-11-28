@@ -12,6 +12,8 @@ public class PlaceableSystem : MonoBehaviour
     #endregion
 
     #region LifeCycle
+
+   
     private void FixedUpdate()
     {
 
@@ -41,9 +43,25 @@ public class PlaceableSystem : MonoBehaviour
 
     private void Update()
     {
+
+        if (!_isInitialized) return;
+       
         if (Input.GetMouseButtonDown(0))
         {
-            _factoryBuildings.Create(_currentCell.WorldPosition);
+            if(_currentCell == null)
+            {
+                return;
+            }
+            
+            var view = ViewsManager.GetView<UIGameplayView>();
+            var selectedCard = view.GetSelectedCard();
+
+            if (selectedCard == null)
+            {
+                return;
+            }
+
+            _factoryBuildings.Create(selectedCard, _currentCell.WorldPosition);
         }
     }
 

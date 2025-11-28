@@ -8,8 +8,11 @@ public class UICardPanel : MonoBehaviour
 
     [SerializeField]
     private Transform content;
+    #region Properties
+    [field: SerializeField]
+    public UICard _currentSelect { get; private set; }
+    #endregion
 
-    private UICard _currentSelect;
     #endregion
 
     #region LifeCycle

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: CardData
   m_EditorClassIdentifier: 
   <Cards>k__BackingField:
-  - {fileID: 11400000, guid: 428921a57efce1742ae8d0cb3ffc8c3f, type: 2}
-  - {fileID: 11400000, guid: 428921a57efce1742ae8d0cb3ffc8c3f, type: 2}
-  - {fileID: 11400000, guid: 428921a57efce1742ae8d0cb3ffc8c3f, type: 2}
-  - {fileID: 11400000, guid: 428921a57efce1742ae8d0cb3ffc8c3f, type: 2}
+  - {fileID: 11400000, guid: 408012b24fb6ebf4d80c21471455a907, type: 2}
+  - {fileID: 11400000, guid: 408012b24fb6ebf4d80c21471455a907, type: 2}
+  - {fileID: 11400000, guid: e36843d55dd59364089b70e29f43f6dc, type: 2}
+  - {fileID: 11400000, guid: e36843d55dd59364089b70e29f43f6dc, type: 2}
+  - {fileID: 11400000, guid: 408012b24fb6ebf4d80c21471455a907, type: 2}
